@@ -127,7 +127,7 @@ if [ "$currency" == "1" ]; then
 	    logo
             printf "1.Add new node\n"
             read bitcoin_sub_ch
-            if [ "$bitcoin_sub_ch"="1" ]; then
+            if [ "$bitcoin_sub_ch" = "1" ]; then
                 mkdir "$core_directory/bitcoin/node"$(($number_of_nodes))
                 touch "$core_directory/bitcoin/node$(($number_of_nodes))/bitcoin.conf"
 		        echo [regtest] >> "$core_directory/bitcoin/node$(($number_of_nodes))/bitcoin.conf"
